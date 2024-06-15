@@ -1,0 +1,16 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .student-container {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width according to your design */
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  

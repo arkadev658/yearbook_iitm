@@ -1,0 +1,93 @@
+body {
+  color: white;
+  border: 70px solid transparent;
+  border-top: 40px solid transparent;
+  /* border-left: 80px solid transparent; */
+  overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; /* Send the video to the back */
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.jumbotron h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.follow-us {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+}
+
+.follow-us p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.social-icons {
+  margin-top: 5px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.web-management {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: transparent;
+}
+
+.g_id_signin {
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+}
+#username{
+  border-radius: 25px;
+  margin: 10px;
+  width: 300px;
+  border: 1px solid transparent;
+  font-style: italic;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+#password{
+  border-radius: 25px;
+  width: 300px;
+  margin: 10px;
+  border: 1px solid transparent;
+  font-style: italic;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3px;
+}

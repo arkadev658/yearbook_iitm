@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "^4.18.3",
+    "firebase": "^10.10.0",
+    "firebaseui": "^6.1.0",
+    "gapi-script": "^1.2.0",
+    "react-google-login": "^5.2.2"
+  }
+}

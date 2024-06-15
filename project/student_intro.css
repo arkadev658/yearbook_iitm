@@ -1,0 +1,332 @@
+body {
+  background-image: url("gallary_background.jpg");
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-repeat: no-repeat;
+  margin: 0; /* Remove default body margin */
+}
+
+.container {
+  background-color: rgb(0, 0, 0,0.6);
+  width: 300px;
+  position: fixed; /* Change position to fixed */
+  left: 0;
+  top: 80px; /* Adjust according to navbar height */
+  bottom: 0;
+  margin-left: 0px;
+  font-weight: bold;
+  font-size: 15px;
+  overflow-y: auto; /* Add overflow-y to enable scrolling if content exceeds container height */
+}
+
+.container-fluid {
+  margin-top: 0px;
+  padding: 0;
+  height: 83px;
+  background-image: url("navbar.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  position: fixed; /* Change position to fixed */
+  top: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-item .nav-link {
+  margin-bottom: 25px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+  font-size: 17px;
+}
+
+.nav-link:visited,
+.nav-link:active {
+  color: white;
+  font-size: 15px;
+}
+
+.nav-link .material-symbols-outlined {
+  margin-right: 5px;
+  color: white;
+  font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20
+}
+
+.image-container {
+  margin-top: 90px;
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adjust according to your design */
+  grid-gap: 10px; /* Adjust the gap between images */
+  padding: 10px; /* Add padding for spacing */
+}
+
+.image-container img {
+  width: 200px;/* Ensure images take up full width of their container */
+  height: 300px; /* Maintain aspect ratio */
+}
+.card {
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 220px;
+  height: 350px;
+  transition: transform 0.2s ease;
+  align-items: center; /* Center content horizontally */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase size by 5% on hover */
+}
+
+.card img {
+  width: 200px;
+  height: 300px;
+  margin: 5px;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.student-name {
+font-family: "Caveat", cursive;
+font-optical-sizing: auto;
+font-weight: 900;
+font-style: normal;
+margin: 5px;
+font-size: 25px;
+}
+
+/* Container for professor comments */
+#professor-comments-container {
+  position: absolute;
+  top: 120px;
+  left: 350px;
+  display: flex;
+  flex-direction: column;
+  height: 75vh; /* Adjust the height as needed */
+  width: 1000px; /* Fixed width */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  padding: 10px; /* Ensure space for scrollbar */
+  background-color: rgba(0,0,0,0.6); /* Optional: background color for the container */
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Card styles for professors */
+.professor-card {
+  display: flex;
+  align-items: flex-start;
+  /* border: 1px solid #ccc; */
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: rgba(71,71,71,0.8);
+  transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Initial box shadow */
+}
+
+.professor-card:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8); /* Increasing box shadow on hover */
+
+}
+
+/* Container for image and name */
+.professor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+/* Image styling for professors */
+.professor-card img {
+  border-radius: 20px;
+  padding: 10px;
+  height: 150px;
+  width: auto;
+}
+
+/* Name styling for professors */
+.professor-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+}
+
+.professor-department{
+  font-size: 1.0em;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+}
+
+/* Comments styling for professors */
+.professor-comments {
+  font-size: 1em;
+  padding: 10px;
+  overflow-wrap: break-word; /* Ensure long words break to fit within the container */
+  color: white;
+}
+
+/* Custom scrollbar styles */
+#professor-comments-container::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Track */
+#professor-comments-container::-webkit-scrollbar-track {
+  background: black; /* Background color of the track */
+}
+
+/* Handle */
+#professor-comments-container::-webkit-scrollbar-thumb {
+  background: grey; /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+#professor-comments-container::-webkit-scrollbar-thumb:hover {
+  background: lightgrey; /* Color of the scrollbar handle on hover */
+}
+
+
+.link-container {
+  display: flex;
+  color: white;
+  align-items: center; /* Align items vertically */
+}
+
+/* Style for the anchor element */
+.link-container a {
+  font-weight: normal; /* Initial font weight */
+  margin: 10px;
+  text-decoration: none; /* Remove underline */
+  font-size: 20px;
+  color: white; /* Link text color */
+}
+
+/* Hover effect: make the text bold */
+.link-container a:hover {
+  font-weight: bold;
+}
+
+/* Style for the Google Font icon */
+.link-container .icon {
+  margin: 10px; /* Add margin to separate from text */
+  padding: 10px;
+  font-size: 25px; /* Adjust size as needed */
+  color: white !important;
+}
+
+
+/* Container for junior comments */
+#junior-comments-container {
+  position: absolute;
+  top: 120px;
+  left: 350px;
+  display: flex;
+  flex-direction: column;
+  height: 75vh; /* Adjust the height as needed */
+  width: 1000px; /* Fixed width */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  padding: 10px; /* Ensure space for scrollbar */
+  background-color: rgba(0, 0, 0,0.6); /* Optional: background color for the container */
+  margin-bottom: 10px;
+}
+
+/* Card styles for professors */
+.junior-card {
+  display: flex;
+  align-items: flex-start;
+  /* border: 1px solid #ccc; */
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: rgba(71,71,71,0.8);
+  transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Container for image and name */
+.junior-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+/* Image styling for professors */
+.junior-card img {
+  border-radius: 20px;
+  padding: 10px;
+  height: 150px;
+  width: auto;
+}
+
+/* Name styling for professors */
+.junior-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+}
+
+.junior-department{
+  font-size: 1.0em;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+  color: white;
+}
+
+/* Comments styling for professors */
+.junior-comments {
+  font-size: 1em;
+  padding: 10px;
+  overflow-wrap: break-word; /* Ensure long words break to fit within the container */
+  color: white;
+}
+
+/* Custom scrollbar styles */
+#junior-comments-container::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Track */
+#junior-comments-container::-webkit-scrollbar-track {
+  background: black; /* Background color of the track */
+}
+
+/* Handle */
+#junior-comments-container::-webkit-scrollbar-thumb {
+  background: grey; /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+#junior-comments-container::-webkit-scrollbar-thumb:hover {
+  background: lightgrey; /* Color of the scrollbar handle on hover */
+}
+

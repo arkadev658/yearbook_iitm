@@ -1,0 +1,142 @@
+body{
+    color: white;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; /* Send the video to the back */
+  }
+  
+p {
+    margin-bottom: 0.5em; /* Adjust this value as needed */
+}
+
+.hod_message {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    font-size: 15px;
+    width: 1000px;
+}
+
+.hod_image {
+    margin-right: 20px;
+    border: solid 2px grey;
+    border-radius: 6px;
+}
+
+.hod_image img {
+    height: 200px;
+    width: auto;
+}
+
+.hod_info {
+    flex: 1;
+    color: white;
+    margin-right: 60px;
+}
+
+.comment {
+    flex: 1; /* Take equal space */
+}
+
+.comment p {
+    margin: 0; /* Remove default margin */
+    background-color: grey;
+    border: solid white 1px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 300px;
+    font-style: italic;
+    overflow: auto;
+}
+
+.comment p::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+}
+
+/* Track */
+.comment p::-webkit-scrollbar-track {
+    background: grey; /* Background color of the track */
+    border-radius: 50px;
+}
+
+/* Handle */
+.comment p::-webkit-scrollbar-thumb {
+    background: white; /* Color of the scrollbar handle */
+    border-radius: 5px; /* Rounded corners for the handle */
+}
+
+.comment:not(:last-child) {
+    margin-right: 40px; /* Add margin between comment boxes */
+}
+
+.material-symbols-outlined {
+    margin-right: 5px; /* Adjust as needed */
+    color: white;
+    font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 20;
+    display: inline-flex; /* Ensure material symbols behave as inline elements */
+    align-items: center; /* Center vertically */
+    vertical-align: middle; /* Align with adjacent text */
+}
+
+.custom-navbar{
+    height: 100px; 
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+/* .nav-item:hover{
+    font-weight: bold;
+} */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-item{
+    color: white !important;
+}
+.dropdown-item:hover{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    font-weight: bold !important;
+}
+.dept-item {
+    text-align: center; /* Center-align department names */
+    padding: 50px; /* Add padding to department items */
+  }
+.img-fluid{
+    height:200px;
+    width:150px;
+}
+
+.btn{
+    border-radius: 20px;
+}
+
+h3{
+    color: red;
+}
+
+.hod-message-head{
+    color: white;
+    font-family: Brush Script MT;
+    font-size: 40px;
+}
+
+.material-symbols-outlined {
+    margin-right: 5px;
+    color: white;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 60;
+    font-size: 40px;
+}
+
+
+
